@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Knowledge Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <div class="navlogo">
+        <a href="/">Chat with your PDF</a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="cloud">
+        <div
+          id="message-list"
+          class="messagelist"
+        >
+        </div>
+      </div>
+      <div class="center">
+        <div class="cloudform">
+          <form id="chat-form">
+            <textarea
+              id="user-input"
+              name="user-input"
+              placeholder="Type your question..."
+              class="textarea"
+              maxlength="512"
+              rows="1"
+            ></textarea>
+            <button
+              type="submit"
+              class="generatebutton"
+            >
+              <svg viewBox='0 0 20 20'
+                class='svgicon'
+                xmlns='http://www.w3.org/2000/svg'>
+                <path d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z'></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/static/chat.js"></script>
+  </body>
+</html>
